@@ -1,0 +1,36 @@
+@use '../../../styles/style.scss' as *;
+
+.briefing {
+  display: flex;
+  margin-right: 10%;
+  padding: 30px 25px;
+  justify-content: space-around;
+  align-self: stretch;
+  background-color: $theme-color-1;
+  gap: 20px;
+  border-radius: 25px;
+}
+
+.briefing__avatar {
+  width: 250px;
+  height: 250px;
+  border-radius: 200px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.45);
+  overflow: hidden;
+}
+
+.briefing__avatar__img {
+  width: 100%;
+  height: 100%;
+  filter: grayscale(100%);
+  object-fit: cover;
+}
+
+.briefing__container__textContainer {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  width: 75%;
+}

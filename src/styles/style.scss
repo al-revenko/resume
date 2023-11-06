@@ -26,3 +26,12 @@ $theme-color-2: #3E7DC7;
   font-size: clamp(2rem, 3vw + 1rem, 4rem);;
   font-weight: 500;
 }
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 30px 145px 30px 20px;
+  border-radius: 5px;
+  box-shadow: -5px 8px 20px 0px rgba(0, 0, 0, 0.30);
+}

@@ -2,9 +2,9 @@ import style from './Person.module.scss'
 
 function Person() {
   return (
-    <section>
+    <section className={style.person__container}>
       <h1 className='title-h1'>Александр Ревенко</h1>
-      <span className={style.profile}>web-developer</span>
+      <span className={style.person__container__profile}>web-developer</span>
     </section>
   )
 }

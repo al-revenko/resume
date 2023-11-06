@@ -1,6 +1,13 @@
 @use '../../../styles/style.scss' as *;
 
-.profile {
+.person__container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+}
+
+.person__container__profile {
   color: $theme-color-2;
   font-size: clamp(2rem, 2vw + 1rem, 3.2rem);;
   font-weight: 500;
