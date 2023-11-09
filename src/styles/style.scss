@@ -6,6 +6,7 @@ $theme-color-1: #212424;
 $theme-color-2: #3E7DC7;
 
 .main-text {
+  line-height: 26px;
   font-size: clamp(1rem, 1vw + 1rem, 2rem);
 }
 
@@ -17,8 +18,18 @@ $theme-color-2: #3E7DC7;
 
 .title-h2 {
   color: $title-color;
-  font-size: clamp(2rem, 2vw + 1rem, 3.2rem);;
+  font-size: clamp(2rem, 2vw + 1rem, 3.2rem);
   font-weight: 500;
+  
+  &::after {
+    content: '';
+    width: 12.6rem;
+    height: 1.4rem;
+    position: absolute;
+    right: 0;
+    top: 34px;
+    background-color: $theme-color-2;
+  }
 }
 
 .title-h3 {
@@ -28,10 +39,12 @@ $theme-color-2: #3E7DC7;
 }
 
 .content-container {
+  color: $text-color;
   display: flex;
   flex-direction: column;
+  position: relative;
   width: 100%;
-  padding: 30px 145px 30px 20px;
-  border-radius: 5px;
+  padding: 30px 25px;
   box-shadow: -5px 8px 20px 0px rgba(0, 0, 0, 0.30);
+
 }
