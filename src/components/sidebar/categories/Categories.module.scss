@@ -6,6 +6,30 @@
   flex-direction: column;
   gap: 30px;
   color: $sidebar-text-color;
+  padding: 25px 35px;
+  overflow-y: auto;
+  
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $theme-color-2;
+  }
+
+  &::-webkit-scrollbar-track-piece:end {
+    background-color: rgb(138, 138, 138);
+    margin-bottom: 3vh; 
+    border-radius: 100px;
+  }
+
+  &::-webkit-scrollbar-track-piece:start {
+    background-color: rgb(138, 138, 138);
+    margin-top: 3vh;
+    border-radius: 100px;
+  }
+
+  
 }
 
 .categories__category {
