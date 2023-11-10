@@ -3,7 +3,7 @@ import Categories from './categories/Categories';
 
 function Sidebar() {
   return (
-    <aside className={style.sidebar}>
+    <aside className={style.container}>
       <Categories />
     </aside>
   )

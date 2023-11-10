@@ -15,4 +15,12 @@ export default defineConfig({
       usePolling: true,
     }
   },
+  css: {
+    modules: {
+      generateScopedName(name, path) {
+        const filename = path.split('/').pop().split('.')[0]
+        return `${filename}-${name}`
+      },
+    }
+  }
 })

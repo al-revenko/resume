@@ -7,7 +7,7 @@ import style from './MainContent.module.scss'
 
 function MainContent() {
   return (
-    <main className={style.main__container}>
+    <main className={style.container}>
       <Person />
       <Briefing />
       <About />

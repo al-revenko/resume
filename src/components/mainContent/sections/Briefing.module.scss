@@ -1,6 +1,6 @@
 @use '../../../styles/style.scss' as *;
 
-.briefing {
+.container {
   display: flex;
   padding: 30px 25px;
   justify-content: space-around;
@@ -10,7 +10,7 @@
   border-radius: 25px;
 }
 
-.briefing__avatar {
+.container__avatar {
   width: 250px;
   height: 250px;
   border-radius: 200px;
@@ -18,14 +18,14 @@
   overflow: hidden;
 }
 
-.briefing__avatar__img {
+.container__avatar__img {
   width: 100%;
   height: 100%;
   filter: grayscale(100%);
   object-fit: cover;
 }
 
-.briefing__container__textContainer {
+.container__container__textContainer {
   color: #fff;
   display: flex;
   flex-direction: column;

@@ -1,6 +1,6 @@
 @use '../../../styles/style.scss' as *;
 
-.categories {
+.container {
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -32,18 +32,18 @@
   
 }
 
-.categories__category {
+.container__category {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 
-.categories__category__title {
+.container__category__title {
   font-size: 20px;
   font-weight: 500;
 }
 
-.categories__category__content {
+.container__category__content {
   display: flex;
   align-items: center;
   gap: 20px;
@@ -51,11 +51,11 @@
   font-weight: 400;
 }
 
-.categories__category__content__icon * {
+.container__category__content__icon * {
   fill: $sidebar-text-color;
 }
 
-.categories__category__content__text {
+.container__category__content__text {
   font-size: 15px;
   font-weight: 400;
   line-height: 46px;

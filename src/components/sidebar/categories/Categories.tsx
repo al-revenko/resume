@@ -12,7 +12,7 @@ const Categories = () => {
 
     return (
       <>
-        <h2 className={style.categories__category__title}>{title}</h2>
+        <h2 className={style.container__category__title}>{title}</h2>
         <ul>
           {
             items.map((item, index) => {
@@ -20,12 +20,12 @@ const Categories = () => {
               const {Icon, text, href} = item;
 
               return (
-                <li className={style.categories__category__content} key={index}>
-                  <Icon width='20px' height='20px' className={style.categories__category__content__icon}/>
+                <li className={style.container__category__content} key={index}>
+                  <Icon width='20px' height='20px' className={style.container__category__content__icon}/>
                   {
                     item.href ?
-                    <a className={style.categories__category__content__text} href={href}>{text}</a> :
-                    <p className={style.categories__category__content__text} >{text}</p>
+                    <a className={style.container__category__content__text} href={href}>{text}</a> :
+                    <p className={style.container__category__content__text} >{text}</p>
                   }
                 </li>
               )
@@ -37,11 +37,11 @@ const Categories = () => {
   }
 
   return (
-    <ul className={style.categories}>
+    <ul className={style.container}>
       {
         categories.map((category, index) => {
           return (
-            <li className={style.categories__category} key={index}>
+            <li className={style.container__category} key={index}>
               { getCategoryContent(category) }
             </li>
           )
