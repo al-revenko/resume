@@ -2,27 +2,27 @@
 
 import CategoryI from "./category.interface";
 
-import MailSvg from "assets/img/icon/contact/mail.svg?react"
-import VkSvg from "assets/img/icon/contact/vk.svg?react"
-import TgSvg from "assets/img/icon/contact/telegram.svg?react"
-import GithubSvg from "assets/img/icon/contact/github.svg?react"
+import MailSvg from "~/assets/img/icon/contact/mail.svg?react"
+import VkSvg from "~/assets/img/icon/contact/vk.svg?react"
+import TgSvg from "~/assets/img/icon/contact/telegram.svg?react"
+import GithubSvg from "~/assets/img/icon/contact/github.svg?react"
 
-import NodeSvg from 'assets/img/icon/other/node.svg?react'
-import TsSvg from 'assets/img/icon/other/ts.svg?react'
-import GitSvg from 'assets/img/icon/other/git.svg?react'
-import NpmSvg from 'assets/img/icon/other/npm.svg?react'
-import PySvg from 'assets/img/icon/other/python.svg?react'
+import NodeSvg from '~/assets/img/icon/other/node.svg?react'
+import TsSvg from '~/assets/img/icon/other/ts.svg?react'
+import GitSvg from '~/assets/img/icon/other/git.svg?react'
+import NpmSvg from '~/assets/img/icon/other/npm.svg?react'
+import PySvg from '~/assets/img/icon/other/python.svg?react'
 
-import ReactSvg from 'assets/img/icon/frontend/react.svg?react'
-import HtmlSvg from 'assets/img/icon/frontend/html.svg?react'
-import CssSvg from 'assets/img/icon/frontend/css.svg?react'
-import FigmaSvg from 'assets/img/icon/frontend/figma.svg?react'
+import ReactSvg from '~/assets/img/icon/frontend/react.svg?react'
+import HtmlSvg from '~/assets/img/icon/frontend/html.svg?react'
+import CssSvg from '~/assets/img/icon/frontend/css.svg?react'
+import FigmaSvg from '~/assets/img/icon/frontend/figma.svg?react'
 
-import NestSvg from 'assets/img/icon/backend/nest.svg?react'
-import PsqlSvg from 'assets/img/icon/backend/psql.svg?react'
-import RestSvg from 'assets/img/icon/backend/rest.svg?react'
-import DockerSvg from 'assets/img/icon/backend/docker.svg?react'
-import OpenApiSvg from 'assets/img/icon/backend/openapi.svg?react'
+import NestSvg from '~/assets/img/icon/backend/nest.svg?react'
+import PsqlSvg from '~/assets/img/icon/backend/psql.svg?react'
+import RestSvg from '~/assets/img/icon/backend/rest.svg?react'
+import DockerSvg from '~/assets/img/icon/backend/docker.svg?react'
+import OpenApiSvg from '~/assets/img/icon/backend/openapi.svg?react'
 
 const categoriesData: CategoryI[] = [
   {

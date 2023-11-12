@@ -1,4 +1,4 @@
-import categoriesData from 'components/sidebar/categories/categories.data';
+import categoriesData from '~/components/sidebar/categories/categories.data';
 import style from './Categories.module.scss'
 import CategoryI from './category.interface';
 

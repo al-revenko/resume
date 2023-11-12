@@ -1,5 +1,5 @@
 import style from './Briefing.module.scss'
-import avatar from '../../../assets/img/avatar.jpg'
+import avatar from '~/assets/img/avatar.jpg'
 
 function Briefing() {
   return (

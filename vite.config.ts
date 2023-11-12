@@ -2,6 +2,7 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tsconfigPaths from 'vite-tsconfig-paths'
 import svgr from 'vite-plugin-svgr'
+import { resolve, basename } from 'path';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -10,6 +11,11 @@ export default defineConfig({
     tsconfigPaths(),
     svgr(),
   ],
+  resolve: {
+    alias: {
+      '~': resolve(__dirname, './src')
+    },
+  },
   server: {
     watch: {
       usePolling: true,
@@ -18,7 +24,7 @@ export default defineConfig({
   css: {
     modules: {
       generateScopedName(name, path) {
-        const filename = path.split('/').pop().split('.')[0]
+        const filename = basename(path).split('.')[0]
         return `${filename}-${name}`
       },
     }

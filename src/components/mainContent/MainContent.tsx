@@ -1,7 +1,7 @@
-import About from "./sections/About";
-import Briefing from "./sections/Briefing";
-import Person from "./sections/Person";
-import Projects from "./sections/Projects";
+import About from "./sections/about/About";
+import Briefing from "./sections/briefing/Briefing";
+import Person from "./sections/person/Person";
+import Projects from "./sections/projects/Projects";
 
 import style from './MainContent.module.scss'
 
