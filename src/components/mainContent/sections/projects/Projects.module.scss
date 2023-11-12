@@ -1,0 +1,65 @@
+@use '~/styles/style.scss' as *;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.container__project {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.container__project__title {
+  display: flex;
+  align-items: center;
+  gap: 18px
+}
+
+.container__project__href {
+  color: $text-color;
+  font-size: 24px;
+}
+
+.container__project__present {
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container__project__present__img {
+  width: 320px;
+  height: 350px;
+  border-radius: 10px;
+}
+
+.container__project__present__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  li {
+    position: relative;
+    color: $text-color;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    padding-left: 25px;
+
+    &::before {
+      position: absolute;
+      display: block;
+      border-radius: 100px;
+      content: '';
+      width: 10px;
+      height: 10px;
+      background-color: $theme-color-2;
+      fill: $theme-color-2;
+      left: 0;
+      top: 8px;
+    }
+  }
+}
