@@ -13,13 +13,11 @@ $theme-color-2: #3E7DC7;
 .title-h1 {
   color: $title-color;
   font-size: clamp(2.4rem, 5vw + 1rem, 6.4rem);
-  font-weight: 500;
 }
 
 .title-h2 {
   color: $title-color;
-  font-size: clamp(2rem, 2vw + 1rem, 3.2rem);
-  font-weight: 500;
+  font-size: clamp(2rem, 3vw + 1rem, 4rem);
   
   &::after {
     content: '';
@@ -34,8 +32,7 @@ $theme-color-2: #3E7DC7;
 
 .title-h3 {
   color: $title-color;
-  font-size: clamp(2rem, 3vw + 1rem, 4rem);;
-  font-weight: 500;
+  font-size: clamp(2rem, 2vw + 1rem, 3.2rem);
 }
 
 .content-container {
