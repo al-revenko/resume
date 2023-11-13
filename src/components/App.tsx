@@ -1,4 +1,4 @@
-import Main from "./mainContent/MainContent"
+import Main from "./main-content/MainContent"
 import Sidebar from "./sidebar/Sidebar"
 import style from "./App.module.scss"
 
