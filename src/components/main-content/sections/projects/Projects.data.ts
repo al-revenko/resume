@@ -1,7 +1,7 @@
 /// <reference types="vite-plugin-svgr/client" />
 
 import cancrinImg from '~/assets/img/cancrin-present.jpg'
-import CbrSvg from '~/assets/img/icon/projects/cbr.svg?react'
+import CbrSvg from '~/assets/svg/icon/projects/cbr.svg?react'
 import ProjectDataI from './project.interface'
 
 const projectsData: ProjectDataI[] = [
