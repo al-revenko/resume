@@ -1,9 +1,15 @@
-.appWrap {
+@use '~/styles/style.scss' as *;
+
+
+.container {
   display: flex;
   flex-direction: row-reverse;
   margin: 0 auto;
-  padding-left: 1vw;
-  padding-right: 17vw;
-  justify-content: space-evenly;
-  gap: 3%;
+  padding: 0 4%;
+  justify-content: center;
+  gap: 5%;
+
+  @media screen and (max-width: $width-laptop) {
+    padding: 0;
+  }
 }

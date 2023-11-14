@@ -4,10 +4,12 @@ import style from "./App.module.scss"
 
 function App() {
   return (
-    <div className={style.appWrap}>
+    <>
+    <div className={style.container}>
       <Main />
       <Sidebar />
     </div>
+    </>
   )
 }
 

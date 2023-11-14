@@ -28,12 +28,22 @@
   gap: 20px;
   justify-content: space-around;
   align-items: center;
+
+  @media screen and (max-width: $width-tablet) {
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
 }
 
 .container__project__present__img {
   width: 320px;
   height: 350px;
   border-radius: 10px;
+
+  @media screen and (max-width: $width-mobile-s) {
+    width: 100vw;
+    border-radius: 0;
+  }
 }
 
 .container__project__present__list {

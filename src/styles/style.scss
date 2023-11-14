@@ -5,9 +5,17 @@ $sidebar-text-color: #fff;
 $theme-color-1: #212424;
 $theme-color-2: #3E7DC7;
 
+$width-laptop-l: 1439px;
+$width-laptop: 1023px;
+$width-tablet: 767px;
+$width-mobile-l: 424px;
+$width-mobile-m: 374px;
+$width-mobile-s: 321px;
+
 .main-text {
   line-height: 26px;
-  font-size: clamp(1rem, 1vw + 1rem, 2rem);
+  font-weight: 400;
+  font-size: clamp(1.6rem, 0.7vw + 1rem, 2rem);
 }
 
 .title-h1 {
@@ -18,16 +26,6 @@ $theme-color-2: #3E7DC7;
 .title-h2 {
   color: $title-color;
   font-size: clamp(2rem, 3vw + 1rem, 4rem);
-  
-  &::after {
-    content: '';
-    width: 12.6rem;
-    height: 1.4rem;
-    position: absolute;
-    right: 0;
-    top: 4rem;
-    background-color: $theme-color-2;
-  }
 }
 
 .title-h3 {
@@ -43,5 +41,23 @@ $theme-color-2: #3E7DC7;
   width: 100%;
   padding: 30px 25px;
   box-shadow: -5px 8px 20px 0px rgba(0, 0, 0, 0.30);
+  min-width: 660px;
+    
+  &::after {
+    content: '';
+    width: 12.6rem;
+    height: 1.4rem;
+    position: absolute;
+    right: 0;
+    top: 4rem;
+    background-color: $theme-color-2;
 
+    @media screen and (max-width: $width-tablet) {
+      top: 3.5rem;
+    }
+  }
+  
+  @media screen and (max-width: $width-laptop) {
+    min-width: 0;
+  }
 }

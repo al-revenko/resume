@@ -11,4 +11,8 @@
   position: sticky;
   top: 3vh;
   border-radius: 20px;
+
+  @media screen and (max-width: $width-laptop){
+    display: none;
+  }
 }
