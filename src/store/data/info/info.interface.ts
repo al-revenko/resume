@@ -4,8 +4,10 @@ interface InfoContentI {
   href?: string,
 }
 
+type InfoTitleType = 'Контакты' | 'Общее' |'Backend' |'Frontend' 
+
 interface InfoI {
-  title: string,
+  title: InfoTitleType,
   items: InfoContentI[]
 }
 
