@@ -1,12 +1,12 @@
-interface CategoryContentI {
+interface InfoContentI {
   Icon: React.FC<React.SVGProps<SVGSVGElement>>,
   text: string,
   href?: string,
 }
 
-interface CategoryI {
+interface InfoI {
   title: string,
-  items: CategoryContentI[]
+  items: InfoContentI[]
 }
 
-export default CategoryI;
+export default InfoI;

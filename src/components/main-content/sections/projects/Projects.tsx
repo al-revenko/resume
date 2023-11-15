@@ -1,4 +1,4 @@
-import projectsData from './Projects.data';
+import projectsData from '~/store/data/projects/projects.data';
 import style from './Projects.module.scss'
 
 function Projects() {

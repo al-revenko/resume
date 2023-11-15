@@ -1,6 +1,6 @@
 /// <reference types="vite-plugin-svgr/client" />
 
-import CategoryI from "./category.interface";
+import InfoI from "./info.interface";
 
 import MailSvg from "~/assets/svg/icon/contact/mail.svg?react"
 import VkSvg from "~/assets/svg/icon/contact/vk.svg?react"
@@ -24,7 +24,7 @@ import RestSvg from '~/assets/svg/icon/backend/rest.svg?react'
 import DockerSvg from '~/assets/svg/icon/backend/docker.svg?react'
 import OpenApiSvg from '~/assets/svg/icon/backend/openapi.svg?react'
 
-const categoriesData: CategoryI[] = [
+const infoData: InfoI[] = [
   {
     title: 'Контакты',
     items: [
@@ -118,4 +118,4 @@ const categoriesData: CategoryI[] = [
   },
 ]
 
-export default categoriesData;
+export default infoData;

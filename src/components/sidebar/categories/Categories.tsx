@@ -1,12 +1,12 @@
-import categoriesData from './Сategories.data';
+import infoData from '~/store/data/info/info.data';
+import InfoI from '~/store/data/info/info.interface';
 import style from './Categories.module.scss'
-import CategoryI from './category.interface';
 
 const Categories = () => {
 
-  const categories = categoriesData;
+  const categories = infoData;
 
-  const getCategoryContent = (category: CategoryI) => {
+  const getCategoryContent = (category: InfoI) => {
 
     const {title, items} = category;
 
