@@ -1,0 +1,17 @@
+@use '~/styles/style.scss' as *;
+
+.container {
+    position: sticky;
+    top: -1px;
+    z-index: 2;
+    background-color: #212424;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: none;
+
+    @media screen and (max-width: $width-laptop) {
+      display: flex;
+    }
+}
