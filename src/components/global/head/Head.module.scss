@@ -7,11 +7,30 @@
     background-color: #212424;
     height: 50px;
     width: 100%;
+    padding: 0 10px;
     align-items: center;
-    justify-content: center;
     display: none;
 
     @media screen and (max-width: $width-laptop) {
       display: flex;
+      justify-content: space-between;
     }
+}
+
+.container__contacts {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}    
+
+.container__contacts__item {
+  color: $sidebar-text-color;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.container__contacts__item__icon * {
+  fill: $sidebar-text-color;
 }
