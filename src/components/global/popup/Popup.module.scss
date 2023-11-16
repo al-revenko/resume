@@ -6,7 +6,6 @@
   left: 0;
   width: 100vw;
   height: 92.3vh;
-  padding: 5vh 0;
   align-items: center;
   justify-content: center;
   display: flex;
@@ -16,9 +15,13 @@
 .container__categories {
   display: flex;
   flex-direction: column;
-  height: 100%;
   justify-content: center;
   gap: 4vh;
+
+  @media screen and (orientation: landscape) {
+    flex-direction: row;
+    gap: 10vh;
+  }
 }
 
 .container__categories__category {
