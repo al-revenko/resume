@@ -14,7 +14,7 @@
     transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  &:hover svg {
+  .active {
     transform: rotate(90deg);
 
   path:nth-child(1) {

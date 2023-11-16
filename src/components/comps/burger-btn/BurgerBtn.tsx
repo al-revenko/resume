@@ -1,9 +1,28 @@
+import { useAppDispatch, useAppSelector } from '~/store/redux/reduxHooks';
+import { changePopupStatus } from '~/store/redux/slices/popupStatus.slice';
 import style from './BurgerBtn.module.scss'
 
 const BurgerBtn = () => {
+  
+  const dispatch = useAppDispatch();
+  const popupStatus = useAppSelector((state) => state.popupStatus)
+  const setPopupStatus = (isActive: boolean) => dispatch(changePopupStatus(isActive)); 
+
+  const switchPopup = () => {
+    if (popupStatus.isAcive) {
+      
+      document.body.style.overflow = "visible"
+      setPopupStatus(false);
+      return;
+    }
+
+    document.body.style.overflow = "hidden"
+    setPopupStatus(true);
+  }
+
   return (
-    <button className={style.container}>
-      <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 200 200">
+    <button className={style.container} onClick={switchPopup}>
+      <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 200 200" className={popupStatus.isAcive ? style.active : ''} >
         <g strokeWidth="6.5" strokeLinecap="round">
           <path
             d="M72 82.286h28.75"

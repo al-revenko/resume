@@ -1,17 +1,16 @@
 @use '~/styles/style.scss' as *;
 
 .container {
-  position: absolute;
-  top: 8vh;
+  position: fixed;
+  top: 7.7vh;
   left: 0;
   width: 100vw;
-  height: 92vh;
+  height: 92.3vh;
   padding: 5vh 0;
   align-items: center;
   justify-content: center;
   display: flex;
   background-color: $theme-color-1;
-  display: none;
 }
 
 .container__categories {
