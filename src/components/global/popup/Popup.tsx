@@ -1,14 +1,22 @@
+import matchMediaQuery from '~/helpers/mathcMediaQuery.helper';
 import { useAppSelector } from '~/store/redux/reduxHooks';
 import infoData from '~/store/data/info/info.data';
 import InfoList from '~/components/comps/info-list/InfoList';
 import style from './Popup.module.scss';
 import InfoListPropsI from '~/components/comps/info-list/InfoList.interface';
-
+import { useDispatch } from 'react-redux';
+import { changePopupStatus } from '../../../store/redux/slices/popupStatus.slice';
 
 const Popup = () => {
 
+  const dispatch = useDispatch();
   const popupStatus = useAppSelector((state) => state.popupStatus)
 
+  matchMediaQuery('(min-width: 1024px)', () => {
+    document.body.style.overflow = "visible"
+    dispatch(changePopupStatus(false))
+  })
+  
   const skills = infoData.filter((item) => {
     if (item.title !== 'Контакты') {
       return true;
