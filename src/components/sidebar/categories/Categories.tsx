@@ -1,7 +1,7 @@
 import infoData from '~/store/data/info/info.data';
 import style from './Categories.module.scss'
 import InfoList from '~/components/comps/info-list/InfoList';
-import InfoListPropsI from '../../comps/info-list/infoList.interface';
+import InfoListPropsI from '~/components/comps/info-list/InfoList.interface';
 
 const Categories = () => {
 
@@ -10,16 +10,19 @@ const Categories = () => {
   const listStyles: InfoListPropsI['styles'] = {
     title: style.container__category__title,
     
+    ul: style.container__category__content,
+
     li: style.container__category__content,
     
-    li_icon: {
-      style: style.container__category__content__icon,
+    li__container__icon: {
+      style: style.container__category__content__item__container__icon,
       width: '20px',
       height: '20px',
     },
-    li_link: style.container__category__content__text,
     
-    li_paragraph: style.container__category__content__text,
+    li__linkContainer: style.container__category__content__item__linkContainer,
+    
+    li__container: style.container__category__content__item__textContainer,
   }
 
   return (

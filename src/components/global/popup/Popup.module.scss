@@ -41,17 +41,14 @@
   gap: 8px;
 }
 
-.container__categories__category__skills__skill {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
 .container__categories__category__skills__skill__icon {
   fill: $sidebar-text-color;
 }
 
 .container__categories__category__skills__skill__text {
   color: $sidebar-text-color;
-  font-size: 16px;
+  font-size: 16px;  
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }

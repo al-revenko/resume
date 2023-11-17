@@ -1,8 +1,8 @@
 import { useAppSelector } from '~/store/redux/reduxHooks';
 import infoData from '~/store/data/info/info.data';
 import InfoList from '~/components/comps/info-list/InfoList';
-import InfoListPropsI from '~/components/comps/info-list/infoList.interface';
 import style from './Popup.module.scss';
+import InfoListPropsI from '~/components/comps/info-list/InfoList.interface';
 
 
 const Popup = () => {
@@ -23,15 +23,13 @@ const Popup = () => {
     
     ul: style.container__categories__category__skills,
 
-    li: style.container__categories__category__skills__skill,
+    li__container: style.container__categories__category__skills__skill__text,
     
-    li_icon: {
+    li__container__icon: {
       style: style.container__categories__category__skills__skill__icon,
       width: '20px',
       height: '20px',
     },
-    
-    li_paragraph: style.container__categories__category__skills__skill__text,
   }
 
   return (

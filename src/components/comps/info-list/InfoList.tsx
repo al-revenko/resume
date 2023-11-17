@@ -1,4 +1,4 @@
-import InfoListPropsI from "./infoList.interface";
+import InfoListPropsI from "./InfoList.interface";
 
 
 const InfoList = (props: InfoListPropsI) => {
@@ -18,11 +18,16 @@ const InfoList = (props: InfoListPropsI) => {
 
             return (
               <li className={styles.li} key={index}>
-                <Icon width={styles.li_icon?.width} height={styles.li_icon?.height} className={styles.li_icon?.style} />
                 {
                   item.href ?
-                    <a className={styles.li_link} href={href}>{text}</a> :
-                    <p className={styles.li_paragraph} >{text}</p>
+                    <a className={styles.li__linkContainer} href={href}>
+                      <Icon width={styles.li__container__icon?.width} height={styles.li__container__icon?.height} className={styles.li__container__icon?.style} />
+                      <p>{text}</p>
+                    </a> :
+                    <div className={styles.li__container}>
+                      <Icon width={styles.li__container__icon?.width} height={styles.li__container__icon?.height} className={styles.li__container__icon?.style} />
+                      <p>{text}</p>
+                    </div>
                 }
               </li>
             )

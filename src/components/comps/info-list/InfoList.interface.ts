@@ -3,17 +3,21 @@ import InfoI from "~/store/data/info/info.interface";
 interface InfoListPropsI {
   infoObj: InfoI
   styles: {
-    ul?: string
     title?: string
     
+    ul?: string
+    
     li?: string
-    li_icon?: {
+    
+    li__container?: string
+    
+    li__linkContainer?: string
+    
+    li__container__icon?: {
       style: string
       width: string | number
       height: string | number
     }
-    li_link?: string
-    li_paragraph?: string
   }
 }
 
