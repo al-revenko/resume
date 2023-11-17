@@ -8,16 +8,16 @@ function Projects() {
       <ul className={style.container}>
         {
           projectsData.map((project, index) => {
-            const { title, link, desc, present } = project;
+            const { title, link_href, desc, present } = project;
 
             return (
-              
               <li className={style.container__project} key={index}>
                 <div className={style.container__project__title}>
                   <title.IconSvg />
-                  <h3 className='title-h3'>{title.text}</h3>
+                  <a className={style.container__project__href} href={link_href}>
+                    <h3 className='title-h3'>{title.text}</h3>
+                  </a>
                 </div>
-                <a className={style.container__project__href} href={link.href}>{link.text}</a>
                 <p className='main-text'>{desc}</p>
                 <div className={style.container__project__present}>
                   <ul className={style.container__project__present__list}>

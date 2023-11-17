@@ -19,8 +19,11 @@
 }
 
 .container__project__href {
-  color: $text-color;
   font-size: 24px;
+
+  &:hover h3, &:focus h3 {
+    color: $theme-color-2;
+  }
 }
 
 .container__project__present {

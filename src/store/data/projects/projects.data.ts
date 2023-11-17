@@ -11,10 +11,7 @@ const projectsData: ProjectDataI[] = [
       IconSvg: CbrSvg,
     },
     
-    link: {
-      href: 'https://github.com/al-revenko/cancrinBot',
-      text: 'github.com/al-revenko/cancrinBot',
-    },
+    link_href: 'https://github.com/al-revenko/cancrinBot',
 
     desc: 'Telegram бот позволяющий быстро получить актуальные курсы валют от Центрального банка России.',
 
@@ -34,10 +31,7 @@ const projectsData: ProjectDataI[] = [
       IconSvg: CbrSvg,
     },
     
-    link: {
-      href: 'https://github.com/al-revenko/cancrinBot',
-      text: 'github.com/al-revenko/cancrinBot',
-    },
+    link_href: 'https://github.com/al-revenko/cancrinBot',
 
     desc: 'Telegram бот позволяющий быстро получить актуальные курсы валют от Центрального банка России.',
 
@@ -56,10 +50,7 @@ const projectsData: ProjectDataI[] = [
       IconSvg: CbrSvg,
     },
     
-    link: {
-      href: 'https://github.com/al-revenko/cancrinBot',
-      text: 'github.com/al-revenko/cancrinBot',
-    },
+    link_href: 'https://github.com/al-revenko/cancrinBot',
 
     desc: 'Telegram бот позволяющий быстро получить актуальные курсы валют от Центрального банка России.',
 

@@ -4,10 +4,7 @@ interface ProjectDataI {
     IconSvg: React.FC<React.SVGProps<SVGSVGElement>>,
   },
 
-  link: {
-    href: string
-    text: string,
-  },
+  link_href: string
 
   desc: string,
 
