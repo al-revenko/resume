@@ -5,12 +5,35 @@ $sidebar-text-color: #fff;
 $theme-color-1: #212424;
 $theme-color-2: #3E7DC7;
 
+$active-color: #589bff;
+
 $width-laptop-l: 1439px;
 $width-laptop: 1023px;
 $width-tablet: 767px;
 $width-mobile-l: 424px;
 $width-mobile-m: 374px;
 $width-mobile-s: 321px;
+
+html {
+  font-size: 62.5%;  
+  font-family: Inter;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  
+  &:hover *,
+  &:focus * {
+    color: $active-color;
+    fill: $active-color;
+  }
+  
+  &:active {
+    opacity: 0.9;
+  }
+}
 
 .main-text {
   line-height: 26px;
@@ -42,7 +65,7 @@ $width-mobile-s: 321px;
   padding: 30px 25px;
   box-shadow: -5px 8px 20px 0px rgba(0, 0, 0, 0.30);
   min-width: 660px;
-    
+
   &::after {
     content: '';
     width: 12.6rem;
@@ -56,7 +79,7 @@ $width-mobile-s: 321px;
       top: 3.5rem;
     }
   }
-  
+
   @media screen and (max-width: $width-laptop) {
     min-width: 0;
   }
