@@ -7,10 +7,11 @@
   padding: 15px 10px;
   background-color: $theme-color-1;
   width: 270px;
-  height: 94vh;
+  max-height: 93vh;
   position: sticky;
-  top: 3vh;
+  top: 30px;
   border-radius: 20px;
+  align-self: flex-start;
 
   @media screen and (max-width: $width-laptop){
     display: none;

@@ -27,7 +27,7 @@ const Head = () => {
                 <a className={style.container__contacts__item} href={item.href}>
                   {
                     isEmail ?
-                      item.text :
+                      <span>{item.text}</span> :
                       <item.Icon className={style.container__contacts__item__icon} width='20px' height='20px' />
                   }
                 </a>

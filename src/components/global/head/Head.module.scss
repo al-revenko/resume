@@ -3,18 +3,18 @@
 .container {
     position: sticky;
     top: -1px;
-    z-index: 2;
+    z-index: 50;
     background-color: #212424;
     height: 8vh;
     min-height: 50px;
     width: 100%;
     padding: 0 10px;
-    align-items: center;
     display: none;
 
     @media screen and (max-width: $width-laptop) {
       display: flex;
       justify-content: space-between;
+      align-items: center;
     }
 }
 
