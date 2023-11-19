@@ -1,0 +1,15 @@
+$width-laptop-l: 1440px;
+$width-laptop: 1024px;
+$width-tablet: 768px;
+$width-mobile-l: 425px;
+$width-mobile-m: 375px;
+$width-mobile-s: 320px;
+
+:export {
+  laptop_l: $width-laptop-l;
+  laptop: $width-laptop;
+  tablet: $width-tablet;
+  mobile_l: $width-mobile-l;
+  mobile_m: $width-mobile-m;
+  mobile_s: $width-mobile-s;
+}

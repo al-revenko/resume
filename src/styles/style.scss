@@ -1,3 +1,5 @@
+@use '~/styles/breakpoints.module.scss' as *;
+
 $title-color: #212424;
 $text-color: #565858;
 $sidebar-text-color: #fff;
@@ -6,13 +8,6 @@ $theme-color-1: #212424;
 $theme-color-2: #3E7DC7;
 
 $active-color: #589bff;
-
-$width-laptop-l: 1440px;
-$width-laptop: 1023px;
-$width-tablet: 768px;
-$width-mobile-l: 425px;
-$width-mobile-m: 375px;
-$width-mobile-s: 320px;
 
 html {
   font-size: 62.5%;  
