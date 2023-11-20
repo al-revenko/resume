@@ -49,10 +49,18 @@
 }
   
 .container__textContainer {
-  color: #fff;
+  color: $sidebar-text-color;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 20px;
   width: 75%;
+}
+
+.container__textContainer__burgerButtonSvg {
+  width: 30px;
+  fill: $sidebar-text-color;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
 }

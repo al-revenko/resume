@@ -28,7 +28,9 @@
 .container__categories__category {
   display: flex;
   flex-direction: column;
-  gap: 10px
+  gap: 10px;
+  min-width: 120px;
+  max-width: 120px;
 }
 
 .container__categories__category__title {
