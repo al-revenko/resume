@@ -1,4 +1,5 @@
-import { useAppDispatch, useAppSelector } from '~/store/redux/reduxHooks';
+import useAppDispatch from '~/store/redux/hooks/useAppDispatch.hook';
+import useAppSelector from '~/store/redux/hooks/useAppSelector.hook';
 import { changePopupStatus } from '~/store/redux/slices/popupStatus.slice';
 import style from './BurgerBtn.module.scss'
 

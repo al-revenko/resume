@@ -1,7 +1,7 @@
-import { useDispatch } from 'react-redux';
+import useAppSelector from '~/store/redux/hooks/useAppSelector.hook';
+import useAppDispatch from '~/store/redux/hooks/useAppDispatch.hook';
 import breakpoints from '~/styles/breakpoints.module.scss';
-import matchMediaQuery from '~/helpers/mathcMediaQuery.helper';
-import { useAppSelector } from '~/store/redux/reduxHooks';
+import matchMediaQuery from '~/helpers/matchMediaQuery.helper';
 import { changePopupStatus } from '~/store/redux/slices/popupStatus.slice';
 import infoData from '~/store/data/info/info.data';
 import InfoList from '~/components/comps/info-list/InfoList';
@@ -10,7 +10,7 @@ import style from './Popup.module.scss';
 
 const Popup = () => {
 
-  const dispatch = useDispatch();
+  const dispatch = useAppDispatch();
   const popupStatus = useAppSelector((state) => state.popupStatus)
 
   matchMediaQuery(`(min-width: ${breakpoints.laptop})`, () => {
