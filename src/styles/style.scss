@@ -19,8 +19,7 @@ a {
   text-decoration: none;
   color: inherit;
   
-  &:hover *,
-  &:focus * {
+  &:hover * {
     color: $active-color;
     fill: $active-color;
   }

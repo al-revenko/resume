@@ -3,11 +3,10 @@
 
 .container {
     position: sticky;
-    top: -1px;
+    top: 0;
     z-index: 50;
     background-color: #212424;
-    height: 8vh;
-    min-height: 50px;
+    height: 60px;
     width: 100%;
     padding: 0 10px;
     display: none;
