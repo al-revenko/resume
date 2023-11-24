@@ -3,7 +3,15 @@ function About() {
     <section className="content-container" style={{gap: '20px'}}>
       <h2 className='title-h2'>Обо мне</h2>
       <p className='main-text'>
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna
+        По окончании 11 класса я поступил в НГУЭУ и одновременно с этим начал увлекаться программированием. Во время обучения в ВУЗе я решил для себя что хочу связать свою карьеру с веб-разработкой и последние 2 года я плотно взялся за программирование. Поначалу я взял фокус на backend разработку.  Моим стеком были Python, Django, а также PostgreSQL. Во время изучения Django я познакомился с SSR, а там и с JavaScript.
+      </p>
+      
+      <p className="main-text">
+        JS меня заинтересовал своей возможностью реализовывать backend и frontend проекты, так сказать не отходя от кассы.  Я стал делать проекты на node, постепенно начал разрабатывать на TypeScript и NestJS и вот неожиданно для себя я начал изучать frontend разработку и делать проекты на React)
+      </p>
+      
+      <p className="main-text">
+        Сейчас, после того как я пометался от технологии к технологии, я по итогу решил углубленно заняться frontend разработкой и теперь я держу курс на то, чтобы стать профессиональным frontend разработчиком, а в дальнейшем и fullstack специалистом. 
       </p>
     </section>
   )

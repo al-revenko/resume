@@ -13,7 +13,7 @@ function Projects() {
             return (
               <li className={style.container__project} key={index}>
                 <div className={style.container__project__title}>
-                  <title.IconSvg />
+                  <title.IconSvg width={48} height={48} />
                   <h3 className='title-h3'>{title.text}</h3>
                 </div>
                 <a className={style.container__project__link} href={link.href}>{link.text}</a>
