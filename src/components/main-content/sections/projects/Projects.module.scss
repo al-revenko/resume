@@ -10,7 +10,7 @@
 .container__project {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 40px;
 }
 
 .container__project__title {
@@ -19,41 +19,50 @@
   gap: 18px
 }
 
-.container__project__href {
-  font-size: 24px;
-
-  &:hover h3, &:focus h3 {
+.container__project__link {
+  font-size: clamp(1.6rem, 1vw + 1rem, 2.4rem);
+  color: $text-color;
+  
+  &:hover , &:focus {
     color: $theme-color-2;
   }
 }
 
 .container__project__present {
   display: flex;
-  gap: 20px;
-  justify-content: space-around;
+  gap: 40px;
   align-items: center;
 
   @media screen and (max-width: $width-tablet) {
     flex-direction: column-reverse;
-    gap: 30px;
+    align-items: start;
   }
 }
 
-.container__project__present__img {
-  width: 320px;
-  height: 350px;
+.container__project__present__imgContainer {
+  flex-shrink: 0;
+  width: 400px;
   border-radius: 10px;
+  overflow: hidden;
 
-  @media screen and (max-width: $width-mobile-s) {
-    width: 100vw;
-    border-radius: 0;
+  @media screen and (max-width: $width-tablet) {
+    align-self: center;
+    width: 100%;
+  }
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }
 
 .container__project__present__list {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  justify-content: space-around;
+  gap: 20px;
+  height: 100%;
 
   li {
     position: relative;
