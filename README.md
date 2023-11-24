@@ -1,27 +1,26 @@
-# React + TypeScript + Vite
+# Резюме
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Моё резюме и демонстрация моих навыков в Frontend разработке.
 
-Currently, two official plugins are available:
+<table>
+  <tr>
+    <th>Компьютер</th>
+    <th>Телефон</th>
+  </tr>
+  <tr>
+    <td>
+        <img src="https://github.com/al-revenko/resume/assets/73707133/540ccaaf-7131-4ce5-b63a-c62cfe779aec" width="1400" />
+    </td>
+    <td>
+        <img src="https://github.com/al-revenko/resume/assets/73707133/631109db-0e53-4122-964d-87465982904b" width="300" />
+    </td>
+  </tr>
+</table>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Особенности
+<ul>
+  <li>Написан на TypeScript</li>
+  <li>Используются библиотеки React и Redux</li>
+  <li>Стилизован с помощью SCSS</li>
+  <li>Адаптирован под мобильные устройства</li>
+</ul>
