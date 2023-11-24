@@ -14,9 +14,10 @@ import NpmSvg from '~/assets/svg/icon/other/npm.svg?react'
 import PySvg from '~/assets/svg/icon/other/python.svg?react'
 
 import ReactSvg from '~/assets/svg/icon/frontend/react.svg?react'
+import ReduxSvg from '~/assets/svg/icon/frontend/redux.svg?react'
 import HtmlSvg from '~/assets/svg/icon/frontend/html.svg?react'
 import CssSvg from '~/assets/svg/icon/frontend/css.svg?react'
-import FigmaSvg from '~/assets/svg/icon/frontend/figma.svg?react'
+import SassSvg from '~/assets/svg/icon/frontend/sass.svg?react' 
 
 import NestSvg from '~/assets/svg/icon/backend/nest.svg?react'
 import PsqlSvg from '~/assets/svg/icon/backend/psql.svg?react'
@@ -82,14 +83,18 @@ const infoData: InfoI[] = [
         text: 'React',
       },
       {
+        Icon: ReduxSvg,
+        text: 'Redux'
+      },
+      {
         Icon: HtmlSvg,
         text: 'HTML',
       },      {
         Icon: CssSvg,
         text: 'CSS',
       },      {
-        Icon: FigmaSvg,
-        text: 'Figma',
+        Icon: SassSvg,
+        text: 'Sass / Scss',
       },
     ]
   },
