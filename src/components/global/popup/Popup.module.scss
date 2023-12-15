@@ -13,21 +13,27 @@
   justify-content: center;
   display: flex;
   background-color: $theme-color-1;
+
+  @media screen and (max-height: 650px){
+    padding-bottom: 0;
+  }
 }
 
 .container__categories {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 4vh;
+  gap: 3vh;
 
   @media screen and (orientation: landscape) {
     flex-direction: row;
     gap: 10vh;
   } 
 
-  @media screen and (max-height: 669px){
-    gap: 7px;
+  @media screen and (max-height: 650px){
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
   }
 }
 
