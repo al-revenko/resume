@@ -28,7 +28,7 @@ interface PersonI {
     Icon: React.FC<React.SVGProps<SVGSVGElement>>,
   }
   
-  info: {
+  optionInfo?: {
     value: string
     Icon: React.FC<React.SVGProps<SVGSVGElement>>,
   }

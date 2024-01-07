@@ -41,7 +41,7 @@ const personData: PersonI = {
     Icon: moneySvg,
   }, 
   
-  info: {
+  optionInfo: {
     value: 'Инвалид II группы',
     Icon: infoSvg,
   },

@@ -12,7 +12,7 @@ function PersonInfo() {
     scheduleType,
     workType,
     salary,
-    info,
+    optionInfo,
   } = personData
 
   const width = '20px';
@@ -40,10 +40,6 @@ function PersonInfo() {
               <location.Icon width={width} height={height} className={style.infoContainer__list__item__icon} />
               <span className='main-text'>{location.value}</span>
             </li>
-            <li className={style.infoContainer__list__item}>
-              <info.Icon width={width} height={height} className={style.infoContainer__list__item__icon} />
-              <span className='main-text'>{info.value}</span>
-            </li>
           </ul>
 
           <ul className={style.infoContainer__list}>
@@ -58,6 +54,14 @@ function PersonInfo() {
               <salary.Icon width={width} height={height} className={style.infoContainer__list__item__icon} />
               <span className='main-text'>{salary.value}</span>
             </li>
+            { 
+              optionInfo ? 
+            <li className={style.infoContainer__list__item}>
+              <optionInfo.Icon width={width} height={height} className={style.infoContainer__list__item__icon} />
+              <span className='main-text'>{optionInfo.value}</span>
+            </li>
+            : null
+            }
           </ul>
         </div>
     </section>
