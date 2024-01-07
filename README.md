@@ -9,10 +9,10 @@
   </tr>
   <tr>
     <td>
-        <img src="https://github.com/al-revenko/resume/assets/73707133/540ccaaf-7131-4ce5-b63a-c62cfe779aec" width="1400" />
+        <img src="https://github.com/al-revenko/resume/assets/73707133/174b3459-965b-4505-af78-374071febf39" width="1400" />
     </td>
     <td>
-        <img src="https://github.com/al-revenko/resume/assets/73707133/631109db-0e53-4122-964d-87465982904b" width="300" />
+        <img src="https://github.com/al-revenko/resume/assets/73707133/f80ddf4a-c975-4e3f-aa94-541799c5fd07" width="500" />
     </td>
   </tr>
 </table>
