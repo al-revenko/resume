@@ -1,5 +1,4 @@
-@use '~/styles/style.scss' as *;
-@use '~/styles/breakpoints.module.scss' as *;
+@use '~/styles/_breakpoints.module.scss' as *;
 
 .container {
   grid-area: main;

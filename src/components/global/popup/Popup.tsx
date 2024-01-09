@@ -3,7 +3,7 @@ import useAppSelector from '~/store/redux/hooks/useAppSelector.hook';
 import useAppDispatch from '~/store/redux/hooks/useAppDispatch.hook';
 import { changePopupStatus } from '~/store/redux/slices/popupStatus.slice';
 import infoData from '~/store/data/info/info.data';
-import breakpoints from '~/styles/breakpoints.module.scss';
+import breakpoints from '~/styles/_breakpoints.module.scss';
 import InfoList from '~/components/comps/info-list/InfoList';
 import InfoListPropsI from '~/components/comps/info-list/InfoList.interface';
 import style from './Popup.module.scss';

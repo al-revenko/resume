@@ -1,5 +1,5 @@
-@use '~/styles/style.scss' as *;
-@use '~/styles/breakpoints.module.scss' as *;
+@use '~/styles/_colors.module.scss' as *;
+@use '~/styles/_breakpoints.module.scss' as *;
 
 .container {
   position: fixed;
@@ -8,7 +8,7 @@
   padding-top: 60px;
   padding-bottom: 60px;
   width: 100vw;
-  height: 100vh;
+  height: 100dvh;
   align-items: center;
   justify-content: center;
   display: flex;
