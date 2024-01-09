@@ -2,16 +2,14 @@
 @use '~/styles/breakpoints.module.scss' as *;
 
 .container {
-  display: flex;
-  flex-direction: row-reverse;
-  margin: 0 auto;
-  padding: 0 4%;
-  justify-content: center;
-  gap: 5%;
-  padding-right: 10vw;
-  padding-left: 20px;
+  margin: 0 2%;
+  display: grid;
+  gap: 2%;
+  grid-template-columns: 2fr 5fr;
+  grid-template-areas: "sidebar main";
 
-  @media screen and (max-width: $width-laptop) {
-    padding: 0;
+  @media screen and (max-width: $width-laptop ) {
+    display: flex;
+    justify-content: center;
   }
 }

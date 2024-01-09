@@ -2,8 +2,10 @@
 @use '~/styles/breakpoints.module.scss' as *;
 
 .container {
+  grid-area: main;
+  
   display: flex;
-  width: 70%;
+  width: 100%;
   max-width: 855px;
   margin-top: 30px;
   flex-direction: column;
