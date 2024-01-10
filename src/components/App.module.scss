@@ -3,9 +3,9 @@
 .container {
   margin: 0 2%;
   display: grid;
-  gap: 2%;
-  grid-template-columns: 2fr 5fr;
-  grid-template-areas: "sidebar main";
+  gap: 5%;
+  grid-template-columns: 1fr auto 1fr;
+  grid-template-areas: "sidebar main .";
 
   @media screen and (max-width: $width-laptop ) {
     display: flex;
