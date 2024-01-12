@@ -1,4 +1,8 @@
 interface PersonI {
+  position: {
+    value: string
+  }
+
   fullname: {
     value: string
     Icon: React.FC<React.SVGProps<SVGSVGElement>>,

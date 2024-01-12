@@ -11,6 +11,10 @@ import infoSvg from "~/assets/svg/icon/personInfo/info.svg?react"
 
 
 const personData: PersonI = {
+  position: {
+    value: 'Frontend-developer'
+  },
+
   fullname: {
     value: 'Ревенко Александр Иванович',
     Icon: personSvg,
