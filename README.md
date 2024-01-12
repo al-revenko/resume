@@ -9,7 +9,7 @@
   </tr>
   <tr>
     <td>
-        <img src="https://github.com/al-revenko/resume/assets/73707133/174b3459-965b-4505-af78-374071febf39" width="1400" />
+        <img src="https://github.com/al-revenko/resume/assets/73707133/138e27aa-4864-4095-809c-4e31bcb06c11" width="1980" />
     </td>
     <td>
         <img src="https://github.com/al-revenko/resume/assets/73707133/f80ddf4a-c975-4e3f-aa94-541799c5fd07" width="500" />
