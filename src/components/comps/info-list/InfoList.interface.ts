@@ -1,10 +1,9 @@
-import InfoI from "~/store/data/info/info.interface";
+import { InfoObjContentI } from "~/store/data/info/info.interface";
 
 interface InfoListPropsI {
-  infoObj: InfoI
+  infoObjItems: InfoObjContentI['items']
+  
   styles: {
-    title?: string
-    
     ul?: string
     
     li?: string

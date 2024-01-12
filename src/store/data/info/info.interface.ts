@@ -4,11 +4,15 @@ interface InfoContentI {
   href?: string,
 }
 
-type InfoTitleType = 'Контакты' | 'Общее' |'Backend' |'Frontend' 
+interface InfoObjContentI {
+    title: string,
+    items: InfoContentI[]
+}
 
 interface InfoI {
-  title: InfoTitleType,
-  items: InfoContentI[]
+  contacts: InfoObjContentI 
+  skills: InfoObjContentI 
 }
 
 export default InfoI;
+export type {InfoContentI, InfoObjContentI}

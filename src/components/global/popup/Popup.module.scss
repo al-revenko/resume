@@ -2,67 +2,53 @@
 @use '~/styles/_breakpoints.module.scss' as *;
 
 .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 60px;
   position: fixed;
   top: 0;
   left: 0;
-  padding-top: 60px;
   width: 100vw;
   height: 100dvh;
-  align-items: center;
-  justify-content: center;
-  display: flex;
   background-color: $theme-color-1;
+}
 
-  @media screen and (max-height: 650px){
-    padding-bottom: 0;
+.container__skills {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  
+  @media screen and (min-width: $width-mobile-l) {
+    align-items: center;
   }
 }
 
-.container__categories {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 3vh;
-
-  @media screen and (orientation: landscape) {
-    flex-direction: row;
-    gap: 10vh;
-  } 
-
-  @media screen and (max-height: 650px){
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-}
-
-.container__categories__category {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  min-width: 120px;
-  max-width: 120px;
-}
-
-.container__categories__category__title {
+.container__skills__title{
   color: $sidebar-text-color;
   font-size: 20px;
 }
 
-.container__categories__category__skills {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+.container__skills__list {
+  display: grid;
+  grid-template-columns: max-content;
+  row-gap: 8px;
+
+  @media screen and (min-width: $width-mobile-l) {
+    grid-template-columns: repeat(4, max-content);
+    column-gap: 12px;
+    row-gap: 12px;
+  }
 }
 
-.container__categories__category__skills__skill__icon * {
-  fill: $sidebar-text-color;
-}
-
-.container__categories__category__skills__skill__text {
+.container__skills__list__item {
   color: $sidebar-text-color;
   font-size: 16px;  
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+.container__skills__list__item__icon * {
+  fill: $sidebar-text-color;
 }
