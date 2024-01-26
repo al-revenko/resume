@@ -8,7 +8,7 @@ const projectsData: ProjectDataI[] = [
   {
     title: "LoftHouse",
     href: 'https://al-revenko.github.io/LoftHouse/',
-    git_href: "https://github.com/al-revenko/cancrinBot",
+    git_href: "https://github.com/al-revenko/LoftHouse",
     img_src: loftImg,
   },
   {
