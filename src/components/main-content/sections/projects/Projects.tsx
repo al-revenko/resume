@@ -1,46 +1,36 @@
-import projectsData from '~/store/data/projects/projects.data';
-import style from './Projects.module.scss'
+import projectsData from "~/store/data/projects/projects.data";
+import style from "./Projects.module.scss";
+
+import GitSvg from "~/assets/svg/icon/contact/github.svg?react";
 
 function Projects() {
   return (
-    <section className="content-container" style={{ gap: '50px' }}>
+    <section className={style.container}>
       <h2 className="title-h2">Мои проекты</h2>
-      <ul className={style.container}>
-        {
-          projectsData.map((project, index) => {
-            const { title, link, desc, present } = project;
-
-            return (
-              <li className={style.container__project} key={index}>
-                <div className={style.container__project__title}>
-                  <title.IconSvg width={48} height={48} />
-                  <h3 className='title-h3'>{title.text}</h3>
-                </div>
-                <a className={style.container__project__link} href={link.href}>{link.text}</a>
-                <p className='main-text'>{desc}</p>
-                <div className={style.container__project__present}>
-                  <ul className={style.container__project__present__list}>
-                    {
-                      present.hooks.map((hook, index) => {
-                        return (
-                          <li key={index}>
-                            {hook}
-                          </li>
-                        )
-                      })
-                    }
-                  </ul>
-                  <div className={style.container__project__present__imgContainer}>
-                    <img src={present.img_src} />
-                  </div>
-                </div>
-              </li>
-            )
-          })
-        }
-      </ul >
-    </section >
-  )
+      <ul className={style.projects_list}>
+        {projectsData.map((project, index) => {
+          return (
+            <li className={style.projectCard} key={index}>
+              <a className={style.projectCard__link} href={project.href ?? project.git_href}>
+                <img src={project.img_src} alt={project.title} />
+              </a>
+              <div className={style.projectCard__info}>
+                <h3>{project.title}</h3>
+                {
+                  project.git_href ? 
+                  <a href={project.git_href}>
+                    <GitSvg width="35px" height="35px" />
+                  </a> 
+                  : 
+                  null
+                }
+              </div>
+            </li>
+          );
+        })}
+      </ul>
+    </section>
+  );
 }
 
 export default Projects;

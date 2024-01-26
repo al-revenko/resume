@@ -1,88 +1,60 @@
-@use '~/styles/_colors.module.scss' as *;
-@use '~/styles/_breakpoints.module.scss' as *;
+@use "~/styles/_colors.module.scss" as *;
+@use "~/styles/_breakpoints.module.scss" as *;
 
 .container {
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-}
+  width: 100%;
 
-.container__project {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
+  h2 {
+    color: $sidebar-text-color;
+    background-color: $theme-color-1;
+    margin-bottom: 60px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
 
-.container__project__title {
-  display: flex;
-  align-items: center;
-  gap: 18px
-}
-
-.container__project__link {
-  font-size: clamp(1.6rem, 1vw + 1rem, 2.4rem);
-  color: $text-color;
-  
-  &:hover {
-    color: $theme-color-2;
+    @media screen and (max-width: $width-laptop) {
+      margin-bottom: 30px;
+    }
   }
 }
 
-.container__project__present {
-  display: flex;
-  gap: 40px;
-  align-items: center;
+.projects_list {
+  display: grid;
+  grid-template-columns: minmax(270px, 1fr);
 
-  @media screen and (max-width: $width-tablet) {
-    flex-direction: column-reverse;
-    align-items: start;
-  }
+  row-gap: 50px;
 }
 
-.container__project__present__imgContainer {
-  flex-shrink: 0;
-  width: 400px;
-  border-radius: 10px;
-  overflow: hidden;
+.projectCard {
+  filter: drop-shadow(0px 0px 1px #000000);
+}
 
-  @media screen and (max-width: $width-tablet) {
-    align-self: center;
-    width: 100%;
-  }
+.projectCard__link {
+  background-color: $theme-color-1;
+  border-radius: 10px 10px 0 0;
   
   img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    max-height: 600px;
   }
 }
 
-.container__project__present__list {
+.projectCard__info {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  gap: 20px;
-  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  padding: 10px 20px;
+  background-color: $theme-color-1;
+  border-radius: 0 0 20px 20px;
 
-  li {
-    position: relative;
-    color: $text-color;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 26px;
-    padding-left: 25px;
+  h3 {
+    color: #fff;
+    font-size: 30px;
+  }
 
-    &::before {
-      position: absolute;
-      display: block;
-      border-radius: 100px;
-      content: '';
-      width: 10px;
-      height: 10px;
-      background-color: $theme-color-2;
-      fill: $theme-color-2;
-      left: 0;
-      top: 8px;
-    }
+  svg * {
+    fill: #fff;
   }
 }
