@@ -11,14 +11,14 @@ function Projects() {
         {projectsData.map((project, index) => {
           return (
             <li className={style.projectCard} key={index}>
-              <a className={style.projectCard__link} href={project.href ?? project.git_href}>
-                <img src={project.img_src} alt={project.title} />
+              <a className={style.projectCard__link} href={project.href ?? project.git_href} target="_blank">
+                  <img src={project.img_src} alt={project.title} />
               </a>
               <div className={style.projectCard__info}>
                 <h3>{project.title}</h3>
                 {
                   project.git_href ? 
-                  <a href={project.git_href}>
+                  <a href={project.git_href} target="_blank">
                     <GitSvg width="35px" height="35px" />
                   </a> 
                   : 

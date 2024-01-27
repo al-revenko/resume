@@ -12,6 +12,7 @@ a {
   color: inherit;
   
   &:hover * {
+    transition: all 0.2s ease-in;
     color: $active-color;
     fill: $active-color;
   }

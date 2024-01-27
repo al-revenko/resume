@@ -17,7 +17,7 @@ const projectsData: ProjectDataI[] = [
     img_src: cancrinImg,
   },
   {
-    title: "Репозиторий CV",
+    title: "Репозиторий этого CV",
     href: "https://github.com/al-revenko/resume",
     img_src: resumeImg,
   },
